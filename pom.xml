@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.aruns</groupId>
-	<artifactId>admin-server</artifactId>
+	<artifactId>hi-service</artifactId>
 	<version>1.0</version>
 	<name>admin-server</name>
 	<description>Demo project for Spring Boot</description>
