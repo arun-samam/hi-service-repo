@@ -1,5 +1,8 @@
 package com.aruns;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +18,8 @@ public class AdminServerApplication {
 	}
 
 	@GetMapping("/hello/{name}")
-	public String sayHello(@PathVariable("name") String name) {
-		return "hello "+name+"\t!!!";
+	public String sayHello(@PathVariable("name") String name) throws Exception {
+		return "hello "+name+"  !!!"+"from@"+InetAddress.getLocalHost().getHostName();
+		
 	}
 }
